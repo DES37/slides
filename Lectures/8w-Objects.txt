@@ -1,0 +1,258 @@
+today
+Due: Final Project: proposal, moodboard, research
+Objects /
+Final Project - exchange, plan
+Student Presentations
+Reading Ch 9, 8
+
+Monday, Feb 29
+Due: Final Project Proposal
+Text + AV + data
+rapid fire- proposal presentations: 1 min each
+Student Presentations
+
+objects
+
+objects
+object-oriented programing (OOP)
+purpose:
+to structure long codes more effectively for management
+divide and conquer
+AND, still have the code work!
+
+•
+•
+•
+
+codes will now have
+
+2 parts!
+
+two parts, but
+
+one continuous piece of code!
+
+sketch_8_Class_train.pde
+
+Train.pde
+
+Train lightgray, darkgray;
+
+class Train {
+
+void setup() {
+size (600, 400);
+lightgray=new Train(100, 100, 55, 40, 20);
+darkgray=new Train (143, 100, 100, 40, 20);
+}
+void draw() {
+background(255);
+
+float x;
+float y;
+float r;
+float w;
+float h;
+Train (float tempX, float tempY, float tempR,
+float tempW, float tempH) {
+
+lightgray.display();
+lightgray.travel();
+
+x=tempX;
+y=tempY;
+r=tempR;
+w=tempW;
+h=tempH;
+
+darkgray.display();
+darkgray.travel();
+}
+
+}
+
+void display() {
+noStroke();
+fill(r);
+rect(x, y, w, h);
+}
+void travel() {
+x++;
+}
+
+define a Class: fields and methods
+
+Train.pde
+
+class Train {
+
+1
+
+float x;
+float y;
+float r;
+float w;
+float h;
+
+fields:
+imagine all possible
+variables needed
+names
+data type
+
+Train (float tempX, float tempY, float tempR,
+float tempW, float tempH) {
+x=tempX;
+y=tempY;
+r=tempR;
+w=tempW;
+h=tempH;
+}
+
+void display() {
+noStroke();
+fill(r);
+rect(x, y, w, h);
+}
+void travel() {
+x++;
+}
+
+2
+
+methods:
+what will it do?
+display on screen
+travel
+
+define a Class: constructor
+
+Train.pde
+
+class Train {
+float x;
+float y;
+float r;
+float w;
+float h;
+Train (float tempX, float tempY, float tempR,
+float tempW, float tempH) {
+x=tempX;
+y=tempY;
+r=tempR;
+w=tempW;
+h=tempH;
+}
+
+void display() {
+noStroke();
+fill(r);
+rect(x, y, w, h);
+}
+void travel() {
+x++;
+}
+
+3
+constructor:
+-assign initial values to fields
+-specified variable order
+
+•
+
+always has the same name as the class
+
+make objects
+sketch_8_Class_train.pde
+Train lightgray, darkgray;
+
+a
+declare object variables:
+
+•
+•
+
+b
+
+void setup() {
+size (600, 400);
+lightgray=new Train(100, 100, 55, 40, 20);
+darkgray=new Train (143, 100, 100, 40, 20);
+}
+void draw() {
+background(255);
+lightgray.display();
+lightgray.travel();
+darkgray.display();
+darkgray.travel();
+}
+
+lightgray
+darkgray
+
+make objects in setup()
+-make two trains (use keyword new)
+-follow specified variable order
+
+•
+•
+
+lightgray
+darkgray
+
+c
+access object’s methods in draw()
+lightgray will
+
+•
+•
+
+display
+travel
+
+class
+A class is the specification for an object:
+1. fields
+2. methods
+3. constructor
+
+main part of your code (for lack of a better word)
+contain objects (each object is an instance of a class)
+each instance can have a choice of associated fields and
+methods
+lightgray.display();
+lightgray.travel();
+darkgray.display();
+//darkgray.travel();
+
+a
+
+1
+
+b
+
+practice your
+
+c
+
+2
+3
+
+understand the logic
+memorize the syntax!
+variations on it next class!
+
+today
+Due: Final Project: proposal, moodboard, research
+Objects /
+Final Project - exchange, plan
+Student Presentations
+Reading Ch 9, 8
+
+Monday, Feb 29
+Due: Final Project Proposal
+Text + AV + data
+rapid fire- proposal presentations: 1 min each
+Student Presentations
+
+

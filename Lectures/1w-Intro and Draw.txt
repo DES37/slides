@@ -1,0 +1,465 @@
+today
+Due: Change the World - not a school assignment
+Intro + Draw
+Introduce Ex 1: Draw it!
+Sign up: Student Presentations
+Reading Ch 1, 2, 3 (only up to 3-2)
+
+next class
+Due: Paper sketches for Ex 1
+code: Draw it!
+Start our Student Presentations
+
+1 Basics and Draw
+
+what is programming?
+Needs human beings to provide instructions.
+Write algorithms.
+Need specificity - syntax; condition associated with logic
+Pseudo-code: get use to doing, plan out the logic in your own language
+Philosophy of Incremental development/modular system:
+Put everything into one set of code all at once is kind of impossible.
+Need lots of little pieces-write mini programs one at a time.
+Fit the pieces together!
+
+what is an algorithm?
+instructions for achieving a task
+
+the idea is like making muffins
+1. Whisk dry ingredients
+2. In another bowl, mix wet ingredients
+3. Pour wet on top of dry and fold together
+4. Scoop into muffin tins
+5. Bake at 400 F
+6. Remove from oven
+
+what is syntax?
+The grammatical rules and structural patterns governing the
+ordered use of appropriate words and symbols for issuing
+commands, writing code, etc., in a particular software application
+or programming language.
+In Processing, write a tiff file to a folder called frames.
+saveFrame(“frames/####.tif”);
+
+what is pseudo-code?
+No exact standard.
+Idea: use the given structure of a programming language to write the logic in
+English.
+In Processing, write a tiff file to a folder called frames.
+saveFrame(“frames/####.tif”);
+saveFrame(to a folder called frames, with the name of the file of 4 digit
+sequence.tif);
+save the frame as a 4 digit sequence.tif to the frames folder.
+>> the more syntax you can remember, the better!
+
+pseudo code algorithms
+
+what is a program?
+...collection of algorithms
+
+what are some programming languages?
+History of Programming Languages
+1954
+
+1960
+
+1965
+
+1975
+
+1970
+
+1986
+
+www.oreilly.com
+
+For more than half of the fifty years computer programmers have been
+writing code, O’Reilly has provided developers with comprehensive,
+in-depth technical information. We’ve kept pace with rapidly changing
+technologies as new languages have emerged, developed, and
+matured. Whether you want to learn something new or need
+answers to tough technical questions, you’ll find what you need
+in O’Reilly books and on the O’Reilly Network.
+
+1990
+
+1980
+
+1990
+
+1991
+
+1990
+
+1985
+
+1991
+
+1993
+
+1994
+
+1995
+
+1995
+
+1996
+
+1996
+
+1997
+
+2000
+
+1997
+
+2000
+
+2001
+
+2001
+
+2002
+
+2001
+
+2003
+
+2003
+
+2004
+
+2003
+
+2004
+
+This timeline includes fifty of the more than 2500 documented
+programming languages. It is based on an original diagram created
+by Éric Lévénez (www.levenez.com), augmented with suggestions
+from O’Reilly authors, friends, and conference attendees.
+For information and discussion on this poster,
+go to www.oreilly.com/go/languageposter.
+©2004 O’Reilly Media, Inc. O’Reilly logo is a registered trademark of O’Reilly Media, Inc. All other trademarks are property of their respective owners. part#30417
+
+what are some programming languages?
+HIGH LEVEL (more English like)
+
+Lingo (Director)
+
+Processing (simple environment)
+
+openFrameworks, Cinder
+
+actionscript
+
+ruby
+
+javascript
+
+python
+
+Max/MSP/Jitter (DataFlow environments - box and flow chart based - maybe ore intuitive)
+
+Programming language - 
+
+ Java (it does everything, and are extendable through libraries)
+
+ C/C++/Object C (apple)
+
+ Pascal 
+
+Assembly language: usually uses 4-bit combination (2^4)=16 combinations
+
+
+	
+	
+	
+
+Machine language: 0/1
+
+1. talk to screen
+
+2. screen has address
+
+3. specify pixel location
+
+4. each is 0/1
+
+5. specify which one to turn on
+
+
+LOW LEVEL (execute very fast)
+
+compiler: translate high level codes to low level language
+
+
+open source
+software is free!
+source code is openly available
+Processing is created by Casey Reas and Ben Fry under
+John Maeda’s MIT Media Lab
+download: processing.org
+It’s a non-profit foundation.
+15th anniversary! Hooray and thank you!
+
+processing
+Launch Processing!
+command+r to run a sketch
+println("hello world”);
+Save sketch - note the folder structure!
+Transport by folder, not file!
+== for folks coming from Processing 2.
+shift+command+r to presentation mode
+command+t to tidy up!
+shift+command+t to tweak
+fullScreen(); replaces size(); ==> new in P3
+fullScreen(SPAN); ==> span across multiple screens!
+pixelDensity(2); ==> finer smoother lines for retina displays :)
+also see pixelHeight and pixelWidth, etc in Reference.
+option to export to application for self-running (executable),Android (apps) or JavaScript (web)
+
+warning!
+Do not rename folders and file - it gets very messy!
+
+error messages
+check out sketch_0_2_error_messages folder inside of Class Files
+on Google drive.
+
+size();
+should always have hard numbers, not variables.
+good ==> size (640, 320);
+not good ==> size (float, float);
+size(); should always be the first line code.
+
+code elements
+// comments...use
+/* */ multiline
+
+them :)
+
+comments
+
+;
+
+statement terminator
+
+,
+
+comma, separates parameters or arguments of functions
+
+print()
+
+print to console
+
+println()
+
+print to console as block
+
+Cartesian Coordinates vs. Computer Coordinates
+
+coordinates and 3d space
+
+draw
+draw a line:
+
+write in pseudo code first: two points define a line, and use a coordinate system to define these points.
+Processing syntax: line(100,50,600,250);
+So, the format is:  functionName (_,_,_,_);
+functionName followed by parenthesis, followed by arguments (values separated by commas), ending with a
+parenthesis, and ending with a semicolon.  
+
+Functions:
+rect
+ellipse
+line
+point
+Check out: sketch_1_draw.pde
+Look up syntax: processing.org, then click on Reference. Command+f.
+in class exercise:
+Use graph paper to sketch out.
+Then try to make a pseudo code.
+Then try to code it in Processing.
+Don’t go wild on me!
+
+primitive shapes
+point, line, triangle, quad, rect, ellipse, arc, bezier
+
+point(x,y);
+
+primitive shapes
+
+primitive shapes
+arcs & radians
+
+arcs & radians
+
+complex shapes
+
+colors
+Additive color mixing system: HSB, RGB, hexadecimal
+ 
+Range - 0-255 (black to white)
+Think Illustrator vector shape and lines:
+stroke and fill are key words that set colors in Processing.
+fill(255, 255, 255); is the same as fill (255);
+
+fill(grayScale,transparency);
+
+fill(R,G,B, alpha)
+
+alpha=0 is completely transparent
+
+alpha=255 is completely opaque
+
+guess, what is background(135);
+
+order of operation
+the program is drawn in the order it is written
+default: what appears first in the code is the lowest layer
+rect(15,15,50,50);
+ellipse(60,60,55,55);
+
+ellipse(60,60,55,55);
+rect(15,15,50,50);
+
+white space
+spacing does not matter
+this:
+size
+(
+
+300,
+300
+
+;
+
+is the same as:
+size(300,300);
+
+)
+
+readability of code
+group things together that belong.
+put paragraph break to separate them.
+size(600,400);
+background(135);
+stroke(255, 0, 0);
+fill(100);
+rect(100, 100, 200, 20);
+
+commenting
+Your future self will thank the present self, if you build a habit to comment.
+
+// Here is an explanation.
+/* Here I have a lot a lot a lot a lot a lot a lot
+a lot a lot a lot a lot a lot a lot a lot a lot to say.
+*/
+
+the flow of program
+most sketches use setup and draw functions
+each is a block of code, indicated with curly brackets
+void setup() {
+//code here
+}
+void draw() {
+//code here
+}
+
+setup is a block of code
+setup (stuff that happens once, only once)
+It’s like File > New in Photoshop, where we want to setup the size of our
+canvas and the background color.
+
+void setup() {
+size(300,300);
+background(255);
+}
+
+draw is a block of code
+stuff that’s going to happen over and over again
+
+void draw() {
+background(0);
+fill(255,0,0);
+rect (100,100,200,200);
+}
+
+pre-defined functions
+Both of these words, setup and draw, are functions that have been pre-defined by
+Processing as what to do once and what to do over and over again.
+We are further defining these two functions within what we specify inside the curly
+brackets.
+
+void draw() {
+background(0);
+fill(255,0,0);
+rect (100,100,200,200);
+}
+
+case sensitive
+this:
+size(300,300);
+
+is not the same as:
+Size(300,300);
+
+drawing attributes
+
+smooth(); // adds anti-aliasing
+noSmooth(); // turns of anti-aliasing
+ellipseMode();
+ellipseMode(CORNER); // center is default
+rectMode();
+rectMode(CORNER); // corner is default
+strokeWeight(x); // x is amount in px
+
+specifying color syntax
+fill(rgb)
+fill(rgb, alpha)
+fill(gray)
+fill(gray, alpha)
+fill(v1, v2, v3)
+fill(v1, v2, v3, alpha)
+Parameters
+rgb
+
+int: color variable or hex value
+
+alpha
+
+float: opacity of the fill
+
+gray float: number specifying value between white and black
+v1
+
+float: red or hue value (depending on current color mode)
+
+v2
+
+float: green or saturation value (depending on current color mode)
+
+v3
+
+float: blue or brightness value (depending on current color mode)
+
+Tools > Color Selector or http://colorschemedesigner.com or https://kuler.adobe.com
+
+color attributes
+stroke(); // stroke color
+noStroke(); // turns off stroke
+fill(); // fill color
+noFill(); // turns off fill
+background(); // background color
+colorMode(); // accepts RGB or HSB
+
+once an attribute is set, it remains active until set again
+
+truly
+Program NOT working is normal!
+It’s the rite of passage.
+
+Ex 1 Draw it!
+check it out!
+paper sketches (due next class, at the start of class)
+
+

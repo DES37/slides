@@ -1,0 +1,221 @@
+today
+Due: Component 4 from Midterm project
+Lab for component 5
+Functions
+Student Presentations
+Reading: Ch 7
+
+Wednesday, Feb 10
+Due: Midterm project
+Midterm project critique
+Introduce Real-life Proposal
+Student Presentations
+
+functions
+It’s time to organize our codes with two key principles in
+object-orientated programming:
+Modularity (code an idea in sections)
+Reusability (use it again and again)
+
+We have been using pre-defined functions.
+
+background(0);
+rect(0,0,100,100);
+We are calling existing functions.
+
+But, if want to use flower function …
+
+flower(x,y);
+It doesn’t exist! You have to define
+it!
+
+user-defined (custom) functions
+syntax:
+returnType name (_,_,_,_){
+}
+
+void flower() {
+}
+
+Where to put this function definition?
+
+typically, it goes below setup and draw
+BUT, IT MUST BE ITS OWN BLOCK
+OF CODE - NOT INSIDE OF draw
+call the flower function from draw
+
+sketch_7_1_Function_basics.pde
+
+Define a flower ( ) function
+void setup () {
+size (600, 400);
+}
+void draw() {
+background(0);
+flower();
+}
+void flower() {
+fill(255, 0, 0);
+noStroke();
+ellipse(93, 100, 20, 20);
+ellipse(80, 80, 20, 20);
+ellipse(69, 100, 20, 20);
+stroke(0, 255, 0);
+line (80, 110, 80, 180);
+}
+
+sketch_7_1_Function_basics.pde
+
+call flower ( ) function 3 times
+with attributes
+void setup () {
+size (600, 400);
+}
+void draw() {
+background(0);
+flower();
+}
+void flower() {
+fill(255, 0, 0);
+noStroke();
+ellipse(93, 100, 20, 20);
+ellipse(80, 80, 20, 20);
+ellipse(69, 100, 20, 20);
+stroke(0, 255, 0);
+line (80, 110, 80, 180);
+}
+
+void setup () {
+size (600, 400);
+}
+void draw() {
+background(0);
+for(int i=1; i<4; i++){
+flower(50*i, 50*i);
+}
+}
+void flower(float xLocation, float yLocation) {
+fill(255, 0, 0);
+noStroke();
+ellipse(93+xLocation, 100+yLocation, 20, 20);
+ellipse(80+xLocation, 80+yLocation, 20, 20);
+ellipse(69+xLocation, 100+yLocation, 20, 20);
+stroke(0, 255, 0);
+line (80+xLocation, 110+yLocation,
+80+xLocation, 180+yLocation);
+}
+
+a better way to write the flower
+find a reference point in the graphics
+
+ellipse(x+13, y-10, 20, 20);
+ellipse(x, y+30, 20, 20);
+ellipse(x-11, y-10, 20, 20);
+line (x, y, x, y+100);
+When you need to specify the location for flower (x,y),
+it’s easier.
+
+(x,y)
+
+modular code design:
+sketch_7_2_Modularity_with_Functions.pde
+
+modular code design:
+separate each component of the graphic group:
+- petals();
+- stem();
+Or even,
+- topPetal();
+- leftPetal();
+- rightPetal();
+- stem();
+This way, you have flexibility in design when
+calling the functions.
+
+display, animate and evaluation
+sketch_7_2_Modularity_with_Functions.pde
+void draw() {
+background (255);
+displayBall(); //call the display function
+moveBall(); //call the move ball function
+checkEdges(); // call the check edge function
+}
+void displayBall() { //display function defined that draws a ball very frame.
+stroke(0);
+fill(127);
+ellipse(x, y, 32, 32);
+}
+void moveBall() { //move ball function defined that advances the circle's position.
+x=x+xspeed;
+y=y+yspeed;
+}
+void checkEdges() { //check edge function defined
+if (x>width||x<0) {
+xspeed=xspeed*-1;
+}
+if (y>height||y<0) {
+yspeed=yspeed*-1;
+}
+}
+
+what does void mean?
+functions that don’t return a value.
+void means - no variable or object type
+returned.
+
+functions that returns value
+void draw() {
+land(width/2, height/2);
+text("Pay Jack: $" + area(r), 100, 100);
+}
+void land(float xLocation, float yLocation) { //a function called land with attributes
+noStroke();
+fill(0, 200, 0);
+ellipse (xLocation, yLocation, 20, 20);
+}
+
+float area(float r) {
+
+//a function called area with an attribute
+
+float calculateArea=2*PI*r;
+return calculateArea;
+
+}
+
+sketch_function_void_return_values.pde
+//*Jack gets paid for lease of his circular land.
+Enter an r to see $ amount. */
+float r=200;
+void setup () {
+size(500, 500);
+noLoop();
+}
+void draw() {
+land(width/2, height/2);
+text("Pay Jack: $" + area(), 100, 100);
+}
+void land(float xLocation, float yLocation) {
+noStroke();
+fill(0, 200, 0);
+ellipse (xLocation, yLocation, r, r);
+}
+float area() {
+float calculateArea=2*PI*r;
+return calculateArea;
+}
+
+today
+Due: Component 4 from Midterm project
+Lab for component 5
+Functions
+Student Presentations
+Reading: Ch 7
+
+Wednesday, Feb 10
+Due: Midterm project
+Midterm project critique
+Introduce Real-life Proposal
+Student Presentations
+
+

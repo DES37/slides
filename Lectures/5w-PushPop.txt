@@ -1,0 +1,161 @@
+today
+Due: Component 1, 2, 3 of Midterm project
+CHANGE THE WORLD
+Push Pop
+Lab to work on midterm project
+Student Presentations
+Reading: Ch 4-6 on p.60, optional Ch 14
+
+Monday, Feb 8
+Due: Component 4 from Midterm project
+Lab for component 5
+Functions
+Student Presentations
+
+a quick review from last class
+
+Transform
+translate
+rotate
+scale
+
+translate
+
+translate(60,80);
+rect(20,20,40,40);
+
+translate
+then rotate
+
+translate(40,40);
+rotate(radians(45));
+rect(0,0,40,40);
+
+Where is the center of rotation?
+
+sketch_14_1_basic_translate_rotate_scale.pde
+
+void setup() {
+size(500, 500);
+background(0);
+stroke(250);
+fill(255);
+}
+void draw() {
+translate(100, 100); //move the origin from (0,0) to (10,10)
+//translate (mouseX,mouseY);
+rotate (PI/4); //rotate the rectangle 45 degrees clockwise
+//float rad = radians(45);
+//rotate(rad);
+scale (1.5); //scale up 1.5 times
+rect(0, 0, 100, 50);
+}
+
+The order of operation matters!
+
+What happens when you draw
+another shape after the coordinates
+have been
+translated
+rotated
+scaled
+
+?
+
+The new transformed coordinates sticks with ya!
+
+Houston, we have a problem!
+This makes my math WAY too complex!
+
+Solution:
+Push/Pop matrix!
+
+Solution:
+Push/Pop matrix to isolate transformations!
+
+pushMatrix() and popMatrix()
+pushMatrix(); //saves current matrix
+popMatrix(); // restores last saved matrix
+draw(); // restores to default matrix
+
+sketch_14_PushPop.pde
+
+multiple translations
+//Multiple Translations
+void setup() {
+size (200, 200);
+}
+void draw() {
+translate (mouseX, mouseY);
+/*everything below this line of code is stuck to a new
+coordinate system, which in this case, it is set by the
+positions of the mouse.*/
+rect(0, 0, 30, 30);
+translate (35, 10);
+rect (0, 0, 15, 15);
+}
+//each time it draws, the coordinates are set to default.
+
+sketch_14_PushPop.pde
+
+multiple translations
+isolating transformations
+//Multiple Translations
+void setup() {
+size (200, 200);
+}
+
+//Isolating Transformations
+void setup() {
+size (200, 200);
+}
+
+void draw() {
+translate (mouseX, mouseY);
+rect(0, 0, 30, 30);
+
+void draw() {
+pushMatrix(); //isolating the big rectangle
+translate (mouseX, mouseY);
+rect(0, 0, 30, 30);
+
+popMatrix();
+
+translate (35, 10);
+rect (0, 0, 15, 15);
+
+translate (35, 10);
+rect (0, 0, 15, 15);
+
+}
+}
+
+if
+you want the transformation to propagate for each transformation to build on the last.
+don’t use Push/Pop matrix!
+
+a fun example on push pop
+sketch_14_17_nested_pushpop.pde
+p.292
+
+first: a little math
+
+logic for
+sketch_14_17_nested
+_pushpop.pde
+
+today
+Due: Component 1, 2, 3 of Midterm project
+CHANGE THE WORLD
+Push Pop
+Lab to work on midterm project
+Student Presentations
+Reading: Ch 4-6 on p.60, optional Ch 14
+
+Monday, Feb 8
+Due: Component 4 from Midterm project
+Lab for component 5
+Functions
+Student Presentations
+
+

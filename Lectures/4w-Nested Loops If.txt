@@ -1,0 +1,229 @@
+today
+Due: Paper sketches for Ex 3
+revisit: Change the World
+more on counting + code: eQuilt
+Student Presentations
+Reading: Ch 6
+
+Monday, Feb 1
+Due: Ex 3
+Random and Transform + Generative Design
+Introduce Midterm
+Student Presentations
+
+check out - sketch_6_4_loop_animation.pde
+frameW
+float frameW=0;
+float spacing=20;
+void setup () {
+size (600, 400);
+}
+void draw() {
+background(0);
+stroke(255);
+int x=0;
+while (x<frameW) {
+line(x, 0, x, height);
+x+=spacing;
+}
+
+}
+
+frameW+=1;
+
+initial moment: frameW=0, x=0, x<frameW is false, nothing is executed
+inside the while loop, frameW add 1=1.
+step 2: x resets to 0, x<frameW is now true. Draw a line at x=0. x=x+20=20, Still
+inside the while loop - x<frameW is false, comes out of the loop and frameW
++1=2.
+
+frameW 0 1
+
+x
+
+0 0
+
+line #
+
+1
+
+2
+
+20
+
+3
+
+4
+
+… 21
+
+22
+
+23
+
+… 41
+
+0 20 0 20 0 20 … 0 20 40 0 20 40 0 20 40 … 0 20 40 60
+1
+
+1
+
+1
+
+1
+
+2
+
+1
+
+2
+
+1 2
+
+1 2 3
+
+check out - sketch_6_6_concentric_circles.pde
+//DRAW 5 CONCENTRIC CIRCLES
+void setup () {
+size (100, 100);
+background (0);
+ellipseMode(CENTER);
+noFill();
+stroke(255);
+strokeWeight(1);
+noLoop();
+}
+void draw () {
+for (float k=0; k<5; k++) {
+float x=50;
+float y=50;
+float ir=10;
+
+//inner most circle radius
+
+float spacing=10; //radius difference between each circle
+float r;
+r=ir+spacing*k;
+ellipse (x, y, r, r);
+}
+}
+
+check out - sketch_6_6_concentric_circle_pattern.pde
+//REPEATE IN X AND Y DIRECTIONS
+void draw () {
+for (float i=0; i<10; i++) {
+float x=50;
+x=x+x*i;
+for (float j=0; j<10; j++) {
+float y=50;
+y=y+y*j;
+for (float k=0; k<5; k++) {
+float ir=10;
+
+//inner most circle radius
+
+float spacing=10; //radius difference between each circle
+float r;
+r=ir+spacing*k;
+
+ellipse (x, y, r, r);
+}
+}
+}
+}
+
+Nested Loops with ifs
+
+//Modulo
+% is an operator called “mod"
+it returns the remainder from a mathematical division
+e.g. 3 % 2 = 1, because 3/2 has the remainder of 1
+j i:0
+0
+1
+2
+
+1
+
+2
+
+3
+
+4
+with this idea, I can evaluate
+if something is evenly divisible.
+And, do things like:
+if it’s divisible, then make it red;
+if not, make it orange.
+if ( (i+j) %2 == 0){
+
+3
+
+fill(255,0,0);
+} else {
+
+4
+
+fill(255,162,0);
+}
+
+//Modulo
+% is an operator called “mod"
+it returns the remainder from division
+e.g. 3 % 1 = 1, because 3/1 has the remainder of 1
+
+if ( (i+j+k) %2 == 0)
+{
+stroke(3,124,193);
+} else
+{
+stroke(255,162,0);
+}
+
+check out - sketch_6_6_concentric_circle_pattern.pde
+//Mod Example
+
+check out - sketch_6_6_concentric_circle_pattern.pde
+
+void draw () {
+for (float i=0; i<10; i++) {
+float x=50;
+x=x+x*i;
+for (float j=0; j<10; j++) {
+float y=50;
+y=y+y*j;
+for (float k=0; k<5; k++) {
+float ir=10;
+
+//inner most circle radius
+
+float spacing=10; //radius difference between each circle
+float r;
+if ( (i+j+k) %2 == 0){
+stroke(3,124,193);
+} else {
+stroke(255,162,0);
+}
+
+r=ir+spacing*k;
+
+ellipse (x, y, r, r);
+}
+}
+}
+}
+
+today
+Due: Paper sketches for Ex 3
+revisit: Change the World
+more on counting + code: eQuilt
+Student Presentations
+Reading: Ch 6
+
+Monday, Feb 1
+Due: Ex 3
+Random and Transform + Generative Design
+Introduce Midterm
+Student Presentations
+
+
