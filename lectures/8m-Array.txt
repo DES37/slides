@@ -1,0 +1,332 @@
+today
+Due: Real-Life Proposal
+Array
+Introduce Final Project
+team, brainstorm
+
+-
+
+Student Presentations
+Reading Ch 9, 8
+
+Wednesday, Feb 24
+Due: Final Project: moodboard, research
+Objects /
+Final Project - exchange, plan
+Student Presentations
+
+Two Variables
+float x1=-20;
+float x2=20;
+void setup () {
+size (500, 500);
+}
+void draw() {
+background (0);
+x1+=0.5;
+x2+=1;
+ellipse(x1, 100, 50, 50);
+ellipse(x2, 200, 50, 50);
+}
+
+Too Many Variables
+float
+float
+float
+float
+float
+
+x1=-20;
+x2=20;
+x3=-30;
+x4=40;
+x5=25;
+
+void setup () {
+size (500, 500);
+}
+void draw() {
+background (0);
+x1+=0.5;
+x2+=1;
+x3+=0.7;
+x4+=3;
+x5+=1.5;
+ellipse(x1,
+ellipse(x2,
+ellipse(x3,
+ellipse(x4,
+ellipse(x5,
+}
+
+100,
+150,
+200,
+250,
+300,
+
+50,
+50,
+50,
+50,
+50,
+
+50);
+50);
+50);
+50);
+50);
+
+3000?!
+
+Array, Not Variables
+
+arrays - the idea
+what if - I can tell the computer to generate and store
+3000 x positions float[ ] x=new float[3000];
+3000 y positions float[ ] y=new float[3000];
+5 different travel speeds to choose from
+float[ ] speed={0.5, 1, 1.8, 3, 0.7};
+then - all I have to do is to plug the values into
+ellipse (x, y, 20, 20)
+x+= one of the speeds
+
+•
+•
+•
+
+and do this 3000 times!
+
+—- use for loop
+
+arrays
+an array is a collection of variables of the same data type
+arrays can be collections of all data types:
+ints, floats, booleans, etc
+
+arrays
+variable:
+int x;
+
+array:
+int[] x;
+
+beauty of array:
+int[] x = new int[3000];
+//create an array of 3000 integer variables.
+Length of the array goes inside [ ].
+
+declare, create, assign
+step 1: declared array and define data type
+float[] x;
+
+step 2: create array with keyword new and define length
+float[] x = new float[3000];
+
+step 3: assign values to each element
+x[i] = random (0, 500);
+
+array: index, elements
+int[]x = new int[5];
+x[i] = random (1,10);
+element
+
+index
+
+8
+
+5
+
+6
+
+8
+
+1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+think of it as storage units:
+each unit is assigned an unit number
+each unit can contain one value
+
+•
+•
+
+Later on, you can retrieve the value according to the unit number!
+
+arrays…two ways to declare
+an array of integers:
+int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+
+this is an array with 10 elements that have already been specified
+
+an array with no values specified:
+int[] numbers = new int[10];
+
+this is an array large enough to store 10 elements but the  
+elements have not been specified (or you could say that  
+the array has not been populated)
+
+loops work great with arrays
+index i used to generate x and y values
+float[] x=new float[3000]; //3000 x location
+float[] y=new float[3000]; //3000 y location
+void setup() {
+size (500, 500);
+for (int i=0; i<x.length; i++) { //dot operator refers to
+the length of x array
+x[i]=random(-10, 200);
+y[i]=random(-10, 200);
+}
+
+}
+
+two uses for index i
+sketch_2_Array_for_loop.pde
+float[] gray;
+void setup() {
+size (500, 300);
+gray = new float [width]; // gray array length is width of sketch
+for (int i=0; i<gray.length; i++) {
+gray[i]=random(0, 255);
+}
+}
+void draw() {
+for (int i=0; i<gray.length; i++) {
+stroke(gray[i]);
+line (i, 0, i, height);
+}
+}
+
+3000?!
+sketch_1_Array_Not_Variables.pde
+
+float[] x=new float[3000]; //3000 x location
+float[] y=new float[3000]; //3000 y location
+float[] speed={0.5, 1, 1.8, 3, 0.7}; //5 speeds
+void setup() {
+size (500, 500);
+for (int i=0; i<x.length; i++) {
+x[i]=random(-10, 200);
+y[i]=random(-10, 200);
+}
+}
+void draw() {
+background(0);
+for (int i=0; i<x.length; i++) {
+x[i]=x[i]+speed[int(random (0, 5))];
+y[i]=y[i]+speed[int(random (0, 5))];
+ellipse(x[i], y[i], 10, 10);
+}
+}
+
+shifting the values in an array one place to the right
+ 
+int []x=new int[60];
+int []y=new int[60];
+int []a=new int[60]; //alpha
+ 
+void setup() {
+  size (500, 500);
+  noStroke();
+  for (int i=0; i<60; i++) {
+    a[i]=(59-i)*4; //reverse storage order-dark
+first
+ }
+ }
+ 
+void draw() {
+  background(0);
+//reverse fill - fill index 59 first
+  for (int i=59; i>0; i--) {
+    x[i]=x[i-1];//x location is always the
+previous x location   
+y[i]=y[i-1];
+ 
+    fill(a[i]);
+    ellipse(x[i], y[i], 50, 50);
+ }
+  x[0]=mouseX;
+  y[0]=mouseY;
+}
+
+mouseX
+
+index
+
+3
+
+5
+
+6
+
+8
+
+11
+
+0
+
+1
+
+2
+
+3
+
+4
+
+2
+
+3
+
+5
+
+6
+
+8
+
+0
+
+1
+
+2
+
+3
+
+4
+
+mouseX
+
+index
+
+X
+11
+
+a fun sketches to check out
+sketch_3_Array_storing_circle_attributes.pde
+
+today
+Due: Real-Life Proposal
+Array
+Introduce Final Project
+team, brainstorm
+
+-
+
+Student Presentations
+Reading Ch 9, 8
+
+Wednesday, Feb 24
+Due: Final Project: proposal, moodboard, research
+Objects /
+Final Project - exchange, plan
+Student Presentations
+
+

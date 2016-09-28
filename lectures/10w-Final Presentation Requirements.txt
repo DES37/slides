@@ -1,0 +1,45 @@
+today
+Final Project debug
+Student Presentations
+
+Monday, March 14: Final Project Critique
+
+•5 minute presentation
+•
+•
+•
+
+each student/group
+
+Please practice at home (what to say, how to say, timing)
+Be actively present for everyone’s presentation
+Absolutely no late project accepted
+
+Final Project Presentation
+// Presentation
+Create a presentation (Keynote, Powerpoint, PDF, etc) that
+showcases your entire process, including all steps mentioned
+above. Title your presentation
+lastName_firstName_presentation.
+Be prepared to discuss your thinking and making, including your
+initial inquiry, visual inspiration / exploration, challenges and
+success. Additionally, you MUST explain the logic of your code
+during your presentation. Your presentation should be 5
+minutes. It will be followed by a quick group critique.
+
+// Digital submit
+Create a folder titled “lastName firstName”, and drop it off at:
+design_scratchy >_DES Class Files > DES 37 Wntr 2016 Young
+>
+Submit Homework > FinalProject.
+finalProject_1.pde
+finalProject_2.pde
+finalProject_3.pde
+horizontal layout PDF (use the same template provided in Ex 3)
+presentation PDF (please no native files)
+// Analog submit
+White paper sketchbook sketches
+Graph paper sketches, including pseudo code.
+1-2 page research paper.
+
+

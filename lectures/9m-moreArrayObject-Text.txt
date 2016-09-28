@@ -1,0 +1,114 @@
+today
+Due: Final Project Proposal
+more Array Objects + Text
+proposal presentations
+Student Presentations
+Reading Ch 17, Optional Reading Ch 15, 16, 18, 19, 20
+
+Wednesday, March 3
+Due: Final Project Paper Sketches
+AV + data
+make prototype
+Student Presentations
+
+more Array and Objects
+Array>sketch_3_Array_storing_circle_attributes.pde
+if (dist (x[i], y[i], mouseX, mouseY)) <=r[i]{
+}
+Objects>sketch_8_Class_random.pde
+introducing a new datatype: color
+int x=0;
+color c = color(random(255), random(255), random(255));
+objects>sketch_8_array_class.pde
+
+more Array and Objects
+
+Objects>sketch_8_4_two_constructors.pde
+//constructor #1
+Particle() {
+x=random(width);
+y=random(height);
+r=random(4, 18);
+}
+//constructor #2
+Particle(float tempX, float tempY, float tempR) {
+x=tempX;
+y=tempY;
+r=tempR;
+}
+
+vector text
+
+vector text
+
+Text>vector_text
+
+vector text
+
+Text>vector_text
+PFont zigBlack;
+void setup() {
+size(500, 500);
+zigBlack = createFont("BodoniStd-Bold", 100);
+//zigBlack = createFont("FrizQuadrataStd", 100);
+textFont(zigBlack);
+fill(0);
+}
+void draw() {
+background(204);
+text("LAX", 50, 140);
+text("LHR", 50, 270);
+text("TXL", 50, 400);
+}
+
+characters and strings
+character
+a single character inside of single quotes
+char letter = 'A';
+char digit = '0';
+
+string
+a sequence of characters in double quotes
+String word
+= "hello";
+String robot
+= "r2d2";
+String nothing = "";
+
+type
+.vlw format is required
+1. create a font in Processing environment
+Tools » Create Font…
+2. load font in setup()
+PFont font = loadFont("……") ;
+
+3. set font (anywhere in code before adding text)
+textFont(font) ; //remains in effect until changed
+
+4. write with font
+text("……", x, y) ;
+
+type
+Processing uses fonts in .vlw file format
+Tools > Create Font
+
+useful text functions
+textWidth("...") // Returns width in pixels of string
+textAlign(LEFT) // Other options are RIGHT, CENTER
+textSize(n) // Sets size of font in pixels
+textLeading(x); // Sets the space between the lines
+
+today
+Due: Final Project Proposal
+more Array Objects + Text
+rapid fire: proposal presentations
+Student Presentations
+Reading Ch 17, Optional Reading Ch 15, 16, 18, 19, 20
+
+Wednesday, March 3
+Due: Final Project Paper Sketches
+AV + data
+make prototype
+Student Presentations
+
+

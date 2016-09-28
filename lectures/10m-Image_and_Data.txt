@@ -1,0 +1,86 @@
+today
+Due: Final Project Prototype
+load multiple images / SVG / data
+code Final Project
+Student Presentations
+
+Wednesday, March 9
+Due: Final Project debug
+Student Presentations
+
+Monday, March 14: Final Project Critique
+
+•
+•
+
+Be actively present for everyone’s presentation
+Absolutely no late project accepted
+
+load multiple image
+
+Image AV > Load_more_images > Load_more_images.pde
+
+PImage img1, img2, img3;
+void setup() {
+fullScreen();
+img1 = loadImage ("tw1.jpg");
+img2 = loadImage ("tw2.jpg");
+img3 = loadImage ("tw3.jpg");
+}
+void draw() {
+image(img1, width/2-150-300-10, height/4);
+image(img2, width/2-150, height/4);
+image(img3, width/2+150+10, height/4);
+}
+
+SVG
+SVG > organic_circle.pde
+PShape circleShape;
+float x=0, y=0;
+float size;
+float change;
+float angle=0;
+void setup() {
+size(800, 800);
+background(255);
+frameRate(12);
+circleShape=loadShape("organic_circle.svg");
+}
+
+code continues on the next page.
+
+void draw() {
+if (mouseX != 0 || mouseY != 0) {
+circleShape.disableStyle();
+fill(200, 200, 0, map(mouseX, 0, width, 0, 0));
+stroke(150);
+strokeWeight(0.1);
+translate(mouseX, mouseY);
+rotate(angle);
+angle+=random(0, 0.02);
+shape(circleShape, mouseX-400, mouseY-400, 400+size,
+400+size);
+change=random(-10, 10);
+size+=change;
+}
+}
+
+data
+
+data > data.pde
+
+int[] heightInfo; //create an array named heightInfo
+void setup() {
+size (500, 500);
+String[] myData=loadStrings("height.csv"); //load data into String named myData
+heightInfo = int (split(myData[0], ‘,')); //heightInfo
+}
+void draw(){
+background (255);
+stroke(0);
+for (int i=0; i<heightInfo.length; i++){ //use for loop to draw bars across.
+rect(i*20, 0, 20, heightInfo[i]);
+}
+}
+
+
