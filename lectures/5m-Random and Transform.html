@@ -1,3 +1,12 @@
+---
+layout: slide
+title: "Lecture 5m"
+description: 
+theme: black
+transition: slide
+---
+
+<section data-markdown>
 today
 Due: Ex 3
 Random and Transform + Generative Design
@@ -11,12 +20,18 @@ Push Pop
 Lab to work on midterm project
 Student Presentations
 
-Random
+</section>
+
+<section data-markdown>
+Random
 “… the physical world is usually idiosyncratic. … We can
 simulate the unpredictable qualities of the world by generating
 random numbers.” - Casey Reas
 
-random ( ) function
+</section>
+
+<section data-markdown>
+random ( ) function
 The random() function always returns a floating-point value, so be
 sure the variable on the left side of the assignment operator (=) is
  float like this:
@@ -29,7 +44,10 @@ f = random(high);
 To generate a pseudo random number between low and high
 f = random(low, high);
 
-void draw ( ) {
+</section>
+
+<section data-markdown>
+void draw ( ) {
 float r= random(0, 100);
 }
 
@@ -37,7 +55,10 @@ a variable named r will randomly use a value between
 0 and 100, each time the program draws.
 
 
-check out: sketch_4_7_random_circle.pde
+</section>
+
+<section data-markdown>
+check out: sketch_4_7_random_circle.pde
 
 
 //Basic Random Circle
@@ -50,7 +71,10 @@ void draw() {
   ellipse(x, y, 100, 100);
 }
 
-check out: sketch_4_7_random_circle.pde
+</section>
+
+<section data-markdown>
+check out: sketch_4_7_random_circle.pde
 
 
 //Basic Random Circle
@@ -67,7 +91,10 @@ also check out: sketch_4_2_Variable_Random.pde
 random x position for a drawing circles
 
 
-a more complex example:
+</section>
+
+<section data-markdown>
+a more complex example:
 sketch_4_2_Random_CirclePossibilities.pde
 
 //GOAL: random position, radius, color and alpha
@@ -79,9 +106,15 @@ float circleG;
 float circleB;
 float circleAlpha; //circle alpha
 
-sketch_random_concentric_circle_pattern.pde
+</section>
 
-sketch_random_concentric_circle_pattern.pde
+<section data-markdown>
+sketch_random_concentric_circle_pattern.pde
+
+</section>
+
+<section data-markdown>
+sketch_random_concentric_circle_pattern.pde
 
 void setup () {
 size (800, 800);
@@ -153,7 +186,10 @@ ellipse (x+random(0, 10), y+random(0, 10), r, r);
 }
 }
 
-better random - Perlin noise
+</section>
+
+<section data-markdown>
+better random - Perlin noise
 Returns the Perlin noise value at specified coordinates.
 The resulting value will always be between 0.0 and 1.0
 Perlin noise is a random sequence generator producing a more
@@ -169,17 +205,29 @@ float x = noise(xPercentage) * width; //adds noise to xPercentage value
 line(x, 0, x, height);
 }
 
-What is Generative Design?
+</section>
+
+<section data-markdown>
+What is Generative Design?
 So new that no formal definition exists!
 
 Involving variable(s) that evolve on its own according to a set of
 defined algorithm.
 
-What does it look like?
+</section>
 
-an example of generative design: sketch_gen1.pde
+<section data-markdown>
+What does it look like?
 
-float x, y;
+</section>
+
+<section data-markdown>
+an example of generative design: sketch_gen1.pde
+
+</section>
+
+<section data-markdown>
+float x, y;
 float oX, oY;
 //original x and original y
 float r=50, theta; //r is radius of the circles, theta is the angle of rotation
@@ -221,12 +269,18 @@ r=50;
 
 //reduce alpha in small circles
 
-Transform
+</section>
+
+<section data-markdown>
+Transform
 translate
 rotate
 scale
 
-translate
+</section>
+
+<section data-markdown>
+translate
 
 translate(60,80);
 rect(20,20,40,40);
@@ -240,7 +294,10 @@ rect(0,0,40,40);
 
 Where is the center of rotation?
 
-sketch_14_1_basic_translate_rotate_scale.pde
+</section>
+
+<section data-markdown>
+sketch_14_1_basic_translate_rotate_scale.pde
 
 void setup() {
 size(500, 500);
@@ -260,7 +317,10 @@ rect(0, 0, 100, 50);
 
 The order of operation matters!
 
-What happens when you draw
+</section>
+
+<section data-markdown>
+What happens when you draw
 another shape after the coordinates
 have been
 translated
@@ -269,11 +329,23 @@ scaled
 
 ?
 
-Midterm - Generative Design
+</section>
+
+<section data-markdown>
+Midterm - Generative Design
 Project Guideline
 Credit when credit is due!
 
-today
+</section>
+
+<section data-markdown>
+</section>
+
+<section data-markdown>
+</section>
+
+<section data-markdown>
+today
 Due: Ex 3
 Random and Transform + Generative Design
 Introduce Midterm: Due Wed, Feb 10
@@ -286,4 +358,4 @@ Push Pop
 Lab to work on midterm project
 Student Presentations
 
-
+</section>

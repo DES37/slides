@@ -1,3 +1,12 @@
+---
+layout: slide
+title: "Lecture 1w"
+description: 
+theme: black
+transition: slide
+---
+
+<section data-markdown>
 today
 Due: Change the World - not a school assignment
 Intro + Draw
@@ -10,9 +19,15 @@ Due: Paper sketches for Ex 1
 code: Draw it!
 Start our Student Presentations
 
-1 Basics and Draw
+</section>
 
-what is programming?
+<section data-markdown>
+1 Basics and Draw
+
+</section>
+
+<section data-markdown>
+what is programming?
 Needs human beings to provide instructions.
 Write algorithms.
 Need specificity - syntax; condition associated with logic
@@ -22,7 +37,10 @@ Put everything into one set of code all at once is kind of impossible.
 Need lots of little pieces-write mini programs one at a time.
 Fit the pieces together!
 
-what is an algorithm?
+</section>
+
+<section data-markdown>
+what is an algorithm?
 instructions for achieving a task
 
 the idea is like making muffins
@@ -33,7 +51,10 @@ the idea is like making muffins
 5. Bake at 400 F
 6. Remove from oven
 
-what is syntax?
+</section>
+
+<section data-markdown>
+what is syntax?
 The grammatical rules and structural patterns governing the
 ordered use of appropriate words and symbols for issuing
 commands, writing code, etc., in a particular software application
@@ -41,7 +62,10 @@ or programming language.
 In Processing, write a tiff file to a folder called frames.
 saveFrame(“frames/####.tif”);
 
-what is pseudo-code?
+</section>
+
+<section data-markdown>
+what is pseudo-code?
 No exact standard.
 Idea: use the given structure of a programming language to write the logic in
 English.
@@ -52,12 +76,21 @@ sequence.tif);
 save the frame as a 4 digit sequence.tif to the frames folder.
 >> the more syntax you can remember, the better!
 
-pseudo code algorithms
+</section>
 
-what is a program?
+<section data-markdown>
+pseudo code algorithms
+
+</section>
+
+<section data-markdown>
+what is a program?
 ...collection of algorithms
 
-what are some programming languages?
+</section>
+
+<section data-markdown>
+what are some programming languages?
 History of Programming Languages
 1954
 
@@ -141,7 +174,10 @@ For information and discussion on this poster,
 go to www.oreilly.com/go/languageposter.
 ©2004 O’Reilly Media, Inc. O’Reilly logo is a registered trademark of O’Reilly Media, Inc. All other trademarks are property of their respective owners. part#30417
 
-what are some programming languages?
+</section>
+
+<section data-markdown>
+what are some programming languages?
 HIGH LEVEL (more English like)
 
 Lingo (Director)
@@ -193,7 +229,10 @@ LOW LEVEL (execute very fast)
 compiler: translate high level codes to low level language
 
 
-open source
+</section>
+
+<section data-markdown>
+open source
 software is free!
 source code is openly available
 Processing is created by Casey Reas and Ben Fry under
@@ -202,7 +241,10 @@ download: processing.org
 It’s a non-profit foundation.
 15th anniversary! Hooray and thank you!
 
-processing
+</section>
+
+<section data-markdown>
+processing
 Launch Processing!
 command+r to run a sketch
 println("hello world”);
@@ -218,20 +260,32 @@ pixelDensity(2); ==> finer smoother lines for retina displays :)
 also see pixelHeight and pixelWidth, etc in Reference.
 option to export to application for self-running (executable),Android (apps) or JavaScript (web)
 
-warning!
+</section>
+
+<section data-markdown>
+warning!
 Do not rename folders and file - it gets very messy!
 
-error messages
+</section>
+
+<section data-markdown>
+error messages
 check out sketch_0_2_error_messages folder inside of Class Files
 on Google drive.
 
-size();
+</section>
+
+<section data-markdown>
+size();
 should always have hard numbers, not variables.
 good ==> size (640, 320);
 not good ==> size (float, float);
 size(); should always be the first line code.
 
-code elements
+</section>
+
+<section data-markdown>
+code elements
 // comments...use
 /* */ multiline
 
@@ -255,11 +309,20 @@ println()
 
 print to console as block
 
-Cartesian Coordinates vs. Computer Coordinates
+</section>
 
-coordinates and 3d space
+<section data-markdown>
+Cartesian Coordinates vs. Computer Coordinates
 
-draw
+</section>
+
+<section data-markdown>
+coordinates and 3d space
+
+</section>
+
+<section data-markdown>
+draw
 draw a line:
 
 write in pseudo code first: two points define a line, and use a coordinate system to define these points.
@@ -281,21 +344,39 @@ Then try to make a pseudo code.
 Then try to code it in Processing.
 Don’t go wild on me!
 
-primitive shapes
+</section>
+
+<section data-markdown>
+primitive shapes
 point, line, triangle, quad, rect, ellipse, arc, bezier
 
 point(x,y);
 
-primitive shapes
+</section>
 
-primitive shapes
+<section data-markdown>
+primitive shapes
+
+</section>
+
+<section data-markdown>
+primitive shapes
 arcs & radians
 
-arcs & radians
+</section>
 
-complex shapes
+<section data-markdown>
+arcs & radians
 
-colors
+</section>
+
+<section data-markdown>
+complex shapes
+
+</section>
+
+<section data-markdown>
+colors
 Additive color mixing system: HSB, RGB, hexadecimal
  
 Range - 0-255 (black to white)
@@ -313,7 +394,10 @@ alpha=255 is completely opaque
 
 guess, what is background(135);
 
-order of operation
+</section>
+
+<section data-markdown>
+order of operation
 the program is drawn in the order it is written
 default: what appears first in the code is the lowest layer
 rect(15,15,50,50);
@@ -322,7 +406,10 @@ ellipse(60,60,55,55);
 ellipse(60,60,55,55);
 rect(15,15,50,50);
 
-white space
+</section>
+
+<section data-markdown>
+white space
 spacing does not matter
 this:
 size
@@ -338,7 +425,10 @@ size(300,300);
 
 )
 
-readability of code
+</section>
+
+<section data-markdown>
+readability of code
 group things together that belong.
 put paragraph break to separate them.
 size(600,400);
@@ -347,7 +437,10 @@ stroke(255, 0, 0);
 fill(100);
 rect(100, 100, 200, 20);
 
-commenting
+</section>
+
+<section data-markdown>
+commenting
 Your future self will thank the present self, if you build a habit to comment.
 
 // Here is an explanation.
@@ -355,7 +448,10 @@ Your future self will thank the present self, if you build a habit to comment.
 a lot a lot a lot a lot a lot a lot a lot a lot to say.
 */
 
-the flow of program
+</section>
+
+<section data-markdown>
+the flow of program
 most sketches use setup and draw functions
 each is a block of code, indicated with curly brackets
 void setup() {
@@ -365,7 +461,10 @@ void draw() {
 //code here
 }
 
-setup is a block of code
+</section>
+
+<section data-markdown>
+setup is a block of code
 setup (stuff that happens once, only once)
 It’s like File > New in Photoshop, where we want to setup the size of our
 canvas and the background color.
@@ -375,7 +474,10 @@ size(300,300);
 background(255);
 }
 
-draw is a block of code
+</section>
+
+<section data-markdown>
+draw is a block of code
 stuff that’s going to happen over and over again
 
 void draw() {
@@ -384,7 +486,10 @@ fill(255,0,0);
 rect (100,100,200,200);
 }
 
-pre-defined functions
+</section>
+
+<section data-markdown>
+pre-defined functions
 Both of these words, setup and draw, are functions that have been pre-defined by
 Processing as what to do once and what to do over and over again.
 We are further defining these two functions within what we specify inside the curly
@@ -396,14 +501,20 @@ fill(255,0,0);
 rect (100,100,200,200);
 }
 
-case sensitive
+</section>
+
+<section data-markdown>
+case sensitive
 this:
 size(300,300);
 
 is not the same as:
 Size(300,300);
 
-drawing attributes
+</section>
+
+<section data-markdown>
+drawing attributes
 
 smooth(); // adds anti-aliasing
 noSmooth(); // turns of anti-aliasing
@@ -413,7 +524,10 @@ rectMode();
 rectMode(CORNER); // corner is default
 strokeWeight(x); // x is amount in px
 
-specifying color syntax
+</section>
+
+<section data-markdown>
+specifying color syntax
 fill(rgb)
 fill(rgb, alpha)
 fill(gray)
@@ -444,7 +558,10 @@ float: blue or brightness value (depending on current color mode)
 
 Tools > Color Selector or http://colorschemedesigner.com or https://kuler.adobe.com
 
-color attributes
+</section>
+
+<section data-markdown>
+color attributes
 stroke(); // stroke color
 noStroke(); // turns off stroke
 fill(); // fill color
@@ -454,12 +571,18 @@ colorMode(); // accepts RGB or HSB
 
 once an attribute is set, it remains active until set again
 
-truly
+</section>
+
+<section data-markdown>
+truly
 Program NOT working is normal!
 It’s the rite of passage.
 
-Ex 1 Draw it!
+</section>
+
+<section data-markdown>
+Ex 1 Draw it!
 check it out!
 paper sketches (due next class, at the start of class)
 
-
+</section>

@@ -1,3 +1,12 @@
+---
+layout: slide
+title: "Lecture 9w"
+description: 
+theme: black
+transition: slide
+---
+
+<section data-markdown>
 today
 Due: Final Project Prototype
 code Final Project
@@ -7,7 +16,10 @@ Wednesday, March 9
 Due: Final Project debug
 Student Presentations
 
-Load Image
+</section>
+
+<section data-markdown>
+Load Image
 
 Image AV>Load_Image
 PImage img; // Declare variable "a" of type PImage
@@ -25,7 +37,10 @@ ellipse(displayWidth/2, displayHeight/2, 200,200);
 text( "Click here to load image!", displayWidth/2-80, displayHeight/2);
 }
 
-mouse click to activate
+</section>
+
+<section data-markdown>
+mouse click to activate
 Image AV>Load_Image
 void mouseClicked() { // mouseClicked is Processing defined
 function
@@ -34,7 +49,10 @@ image(img, 0, 0);
 }
 }
 
-//Load Vidoe: Image AV>Load_Video
+</section>
+
+<section data-markdown>
+//Load Vidoe: Image AV>Load_Video
 import processing.video.*;
 Movie myMovie;
 int startVideo = 0;
@@ -64,4 +82,4 @@ void movieEvent(Movie m) {
 m.read();
 }
 
-
+</section>

@@ -1,3 +1,13 @@
+---
+layout: slide
+title: "Lecture 10m"
+description: 
+theme: black
+transition: slide
+---
+
+
+<section data-markdown>
 today
 Due: Final Project Prototype
 load multiple images / SVG / data
@@ -16,7 +26,10 @@ Monday, March 14: Final Project Critique
 Be actively present for everyone’s presentation
 Absolutely no late project accepted
 
-load multiple image
+</section>
+
+<section data-markdown>
+load multiple image
 
 Image AV > Load_more_images > Load_more_images.pde
 
@@ -33,7 +46,10 @@ image(img2, width/2-150, height/4);
 image(img3, width/2+150+10, height/4);
 }
 
-SVG
+</section>
+
+<section data-markdown>
+SVG
 SVG > organic_circle.pde
 PShape circleShape;
 float x=0, y=0;
@@ -49,7 +65,10 @@ circleShape=loadShape("organic_circle.svg");
 
 code continues on the next page.
 
-void draw() {
+</section>
+
+<section data-markdown>
+void draw() {
 if (mouseX != 0 || mouseY != 0) {
 circleShape.disableStyle();
 fill(200, 200, 0, map(mouseX, 0, width, 0, 0));
@@ -65,7 +84,10 @@ size+=change;
 }
 }
 
-data
+</section>
+
+<section data-markdown>
+data
 
 data > data.pde
 
@@ -83,4 +105,4 @@ rect(i*20, 0, 20, heightInfo[i]);
 }
 }
 
-
+</section>
