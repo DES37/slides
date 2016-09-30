@@ -8,6 +8,7 @@ transition: slide
 ---
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: Component 4 from Midterm project
 Lab for component 5
@@ -21,36 +22,44 @@ Midterm project critique
 Introduce Real-life Proposal
 Student Presentations
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 functions
 It’s time to organize our codes with two key principles in
 object-orientated programming:
 Modularity (code an idea in sections)
 Reusability (use it again and again)
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 We have been using pre-defined functions.
 
 background(0);
 rect(0,0,100,100);
 We are calling existing functions.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 But, if want to use flower function …
 
 flower(x,y);
 It doesn’t exist! You have to define
 it!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 user-defined (custom) functions
 syntax:
 returnType name (_,_,_,_){
@@ -59,9 +68,11 @@ returnType name (_,_,_,_){
 void flower() {
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Where to put this function definition?
 
 typically, it goes below setup and draw
@@ -69,9 +80,11 @@ BUT, IT MUST BE ITS OWN BLOCK
 OF CODE - NOT INSIDE OF draw
 call the flower function from draw
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_7_1_Function_basics.pde
 
 Define a flower ( ) function
@@ -92,9 +105,11 @@ stroke(0, 255, 0);
 line (80, 110, 80, 180);
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_7_1_Function_basics.pde
 
 call flower ( ) function 3 times
@@ -136,9 +151,11 @@ line (80+xLocation, 110+yLocation,
 80+xLocation, 180+yLocation);
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 a better way to write the flower
 find a reference point in the graphics
 
@@ -151,15 +168,19 @@ it’s easier.
 
 (x,y)
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 modular code design:
 sketch_7_2_Modularity_with_Functions.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 modular code design:
 separate each component of the graphic group:
 - petals();
@@ -172,9 +193,11 @@ Or even,
 This way, you have flexibility in design when
 calling the functions.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 display, animate and evaluation
 sketch_7_2_Modularity_with_Functions.pde
 void draw() {
@@ -201,17 +224,21 @@ yspeed=yspeed*-1;
 }
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 what does void mean?
 functions that don’t return a value.
 void means - no variable or object type
 returned.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 functions that returns value
 void draw() {
 land(width/2, height/2);
@@ -232,9 +259,11 @@ return calculateArea;
 
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_function_void_return_values.pde
 //*Jack gets paid for lease of his circular land.
 Enter an r to see $ amount. */
@@ -257,9 +286,11 @@ float calculateArea=2*PI*r;
 return calculateArea;
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: Component 4 from Midterm project
 Lab for component 5
@@ -273,4 +304,5 @@ Midterm project critique
 Introduce Real-life Proposal
 Student Presentations
 
+	</script>
 </section>

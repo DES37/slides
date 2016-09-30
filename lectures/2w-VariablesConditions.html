@@ -7,6 +7,7 @@ transition: slide
 ---
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: ex 2, critique
 topics: variables, conditions
@@ -17,9 +18,11 @@ due: Paper sketches for Ex 2
 studio: Free Patterns!
 student presentations: see schedule online
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 review
 flow with setup and draw
 order of operation
@@ -28,9 +31,11 @@ iterate your design on unruled paper FIRST!
 this is the same thumbnail practice you do in all your
 classes in design.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 basic functions
 void setup(){
 //runs only once
@@ -41,9 +46,11 @@ void draw(){
 //such as shapes and movements
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 variables
 Variables store data for later use in your program.
 
@@ -66,9 +73,11 @@ positions
 fonts
 ...and more
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 using variables
 use variables to:
 - save yourself from typing the same thing over and over again.
@@ -78,9 +87,11 @@ use variables to:
 (example: a circle moves from left to right => its x position
 changes.)
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 variable names
 Case sensitive!
 myContainer, my_container, my_Container
@@ -91,17 +102,21 @@ Cannot start with a number
 Must be unique names within your program
 Cannot be a keyword (such as rect, ellipse, setup or draw)
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 keywords in Processing
 indicated with color
 note here: i just named y and d as my variables; it’s in
 black. black is safe!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 consistency
 Be consistent in naming conventions:
  
@@ -113,9 +128,11 @@ design variable names so that you can understand in a flash
 think of others who will be reading your code
 try to make it shorter rather than longer
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 What is a good variable name for
 temperature?
 t
@@ -124,9 +141,11 @@ temperature
 roomTemp
 roomTemperature
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 follow the rules
 (even though that makes me cringe...lol)
 int temp;
@@ -138,9 +157,11 @@ int lastTemp;
 int last_temp;
 int last-temp;
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 int temp;
 int int;
 
@@ -161,9 +182,11 @@ int last-temp;
 
 //can’t use dash
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 variable declaration and initialization
 If the entire program shares the same variable, we put it before setup() to
 declare what’s called “global variables” - variables used throughout the
@@ -175,9 +198,11 @@ x = 5;
 //declaration and initialization
 int x = 5;
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 variable: assign values with =
 int a;
 a = 3;
@@ -190,16 +215,20 @@ b = a + 45;
 
 rect(100, 100, b, a);
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 let’s try it!
 sketch_4_Variables.pde
 use variable to draw a circle.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 User Defined Variables
 step 1 declare the variable
 1. specify data type (number, a string of characters, etc)
@@ -220,9 +249,11 @@ function(arguments)semicolon
 now we are going to learn a new thingsomething=something; //This means, circleX=some math operation;
 circleX=width/3; //width of the canvas divided by 3. here “width” is a keyword.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Using Variables to Create Animation
 Animation:
 think flip-book!
@@ -245,9 +276,11 @@ circleX=circleX+1;
 52+1
 //fourth x position …. the program will add forever.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Incremental Variables - Speed of Animation
 circleX=circleX+1;
 50 +1 //second x position
@@ -270,17 +303,21 @@ initial value =50
 Check out!
 sketch_4_1_Incremental_Variables.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 variable scope
 When a variable is shared throughout the program,
 declare it above and outside setup() and draw()
 This is called a global variable
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 variable scope
 When a variable is created within a block of code,
 such as a function such as setup(), it can be used
@@ -288,9 +325,11 @@ only within that block. In this case draw()will not
 know it.
 This is called a local variable
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 system variables for dimensions
 width // width in pixels of sketch size
 height // height in pixels of sketch size
@@ -302,24 +341,30 @@ and height are only available after
 
 they have been declared using size();
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 increment and decrement shorthand
 x = x + 1; is the same as x++; (increment by 1)
 x = x - 1; is the same as x--; (decrement,increment by -1)
 x = x + 5; is the same as x+=5; (increment by 5)
 x = x - 5; is the same as x-=5; (decrement,increment by -5)
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 let’s code - 6 variables!
 sketch_4_2_six_variables.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Boolean expressions
 FYI- Link to Daniel Shiffman’s video:
 https://www.youtube.com/watch?v=wsI6N9hfW7E&list=PLRqwXV7Uu6YqykuLs00261JCqnL_NNZ_
@@ -332,9 +377,11 @@ x >20
 In this case, evaluation of the statement is
 needed.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 For the purpose of evaluation:
 relational operators
 != (not equal)
@@ -351,9 +398,11 @@ logical operators
 
 These operators are C’s operators.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 conditional statements
 if
 Only do one thing, when there are two possibilities:
@@ -369,9 +418,11 @@ If it’s a small apple, then compost,
 else if it’s a big red apple, then put it in the red basket,
 else, put it in the black basket.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 syntax
 if (condition) {
 statements;
@@ -384,9 +435,11 @@ background (0);
 If the condition inside the ( ) evaluates to be true, then,
 execute the code inside the { }. If not, do nothing.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_5_0_Boolean.pde
 
 If the x position of the mouse is greater than 200, then the background
@@ -394,9 +447,11 @@ color is orange.
 Note: mouseX is in pink. This means “system variable”. Must follow
 syntax.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_5_0_Boolean.pde continued
 
 This code might run fine, but we are taking a chance.
@@ -406,9 +461,11 @@ There is a chance that the program skips over the exact number of 360.
 It’s better to use xPosition>=width.
 Try xPosition=xPosition+3 to see the program skipping over 360.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 syntax for if else
 if (condition) {
 statements
@@ -426,9 +483,11 @@ If the condition inside the ( ) evaluates to be true, then,
 execute the code inside the { }. Else, execute the code
 inside the { } after the word “else”.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 syntax for AND OR
 for AND, we use ampersands.
 if ((  )&&(  )){
@@ -443,9 +502,11 @@ if ((  )||(  )) {
 —
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_5_1_if_else.pde
 
 sketch_5_4_Bouncing_Ball.pde
@@ -454,9 +515,11 @@ sketch_5_2_and_or.pde
 
 sketch_5_5_Boolean_true_false.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Yeah!! Now you have all the tools to program!!! All you need
 is variables and conditions! Other things we learn in the
 future will help organize and make your code more efficient!
@@ -464,4 +527,5 @@ Congratulations!
 
 Now, on to ex 2: Free Patterns!
 
+	</script>
 </section>

@@ -8,6 +8,7 @@ transition: slide
 ---
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: Ex 2
 Loops
@@ -21,9 +22,11 @@ revisit: Change the World
 more on counting + code: eQuilt
 Student Presentations
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 conditions
 Make sure to format your code!
 if (Tuesday) {
@@ -49,9 +52,11 @@ eat turkey;
 eat tofu;
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 conditions
 What’s wrong with this?
 if (Tuesday) {
@@ -62,9 +67,11 @@ eat tofu;
 eat turkey;
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 conditions
 What’s wrong with this?
 if (Tuesday) {
@@ -81,27 +88,35 @@ is ignored.
 syntax error: else has to come at the end, if Thursday is an
 exception.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Loops
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Loops are like the industrial revolution!
 Repetitive tasks are done by the machine.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 two types of loops
 while loop
 for loop
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 while loop
 The idea of taking a single concept and repeat it many
 many times.
@@ -110,9 +125,11 @@ beautiful, because it saves so much time!
 However, loops MUST have an exist condition, or it will
 lock out! STUCK AND NEVER GET OUT!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 compare if to while
 In an if statement, if the evaluation inside the () is true, execute the
 statement ONCE; if the evaluation is false, don’t execute the statement.
@@ -128,9 +145,11 @@ statement;
 The code will run, while the condition inside the () is true. Once the
 condition is no longer met, it jumps out of the while loop.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 using if
 
 using while
@@ -171,9 +190,11 @@ x=x+1;
 
 check out - sketch_6_0_while_loop.pde - //REVIEW EXAMPLE
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 when does it come out of the while loop?
 float x=0;
 
@@ -212,9 +233,11 @@ x=x+1;
 
 check out - sketch_6_0_while_loop.pde - //EXAMPLE 1
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 how many circles did it produce?
 float x=0;
 
@@ -252,9 +275,11 @@ x=x+100; //6 circles, where?
 }
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 use println(x); to help you debug
 float x=0;
 
@@ -294,17 +319,21 @@ x=x+1;
 
 check out - sketch_6_0_while_loop.pde - //EXAMPLE 1
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 //EXAMPLE 2:
 How to symmetrically fit x amount of evenly spaced circles on a canvas?
 What is the spacing between the circles?
 x+=spacing;
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 //EXAMPLE 2:
 Assuming a particular amount of padding on the left and right, the math is as
 follows: spacing = (width - 2*padding) / (number of circles - 1)
@@ -322,9 +351,11 @@ padding
 
 padding
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 math is as follows: (width - 2*padding) / (number of circles - 1)
 (600-2*100)/(5-1)=100
 code is: x+=100;
@@ -343,9 +374,11 @@ padding
 
 check out - sketch_6_0_while_loop.pde - //EXAMPLE 2
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 loop dangers!
 Loops MUST have an exist condition, or it will lock out!
 STUCK AND NEVER GET OUT!
@@ -359,9 +392,11 @@ x=x-1;
 ellipse(x, 100, 20, 20);
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 two loops
 
 check out - sketch_6_1_two_loop_grid.pde - //EXAMPLE 1, 2
@@ -403,9 +438,11 @@ y=y+50;
 }
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 while loops can draw infinitely!
 check out - sketch_6_1_two_loop_grid.pde - //EXAMPLE 3
 
@@ -428,9 +465,11 @@ x+= random(10, 100);
 println(x);
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 for loop
 When you don’t need it to be infinite and forever. Great for
 controlling repetition. Can be identical to the while loop,
@@ -442,9 +481,11 @@ statements;
 
 semicolon!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 the following blocks of codes are identical.
 check out - sketch_6_2_for_loop.pde
 
@@ -459,9 +500,11 @@ for (int x=0; x<width; x=x+20) {
  line (x, 0, x, height);
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Variable Scope AGAIN!
 global variable: we declare at the very top.
 for example, at the very top of the code, we write:
@@ -473,9 +516,11 @@ local in scope as possible.
 global variables don’t work well with for loops! as you can imagine
 by its very set up, it can get very confused.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Here is a good example:
 void setup() {
   size (600, 400);
@@ -491,9 +536,11 @@ void draw() {
 x here is a local variable; declare it right when you need to use it.
 check out - sketch_6_3_Variable_Scope.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 for loop: how many times to loop?
 There is a counting mechanism
 embedded in for loop.
@@ -501,9 +548,11 @@ The most common variables used for
 generic counting:
 i, j and k
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 for loop
 (desire 10 iterations) start at 0 and count up to 9
 for (int i=0; i<10; i=i+1) //i++
@@ -514,9 +563,11 @@ for (int i=0; i<100; i=i+10) //i+=10
 (desire 20 iterations) start at 100 and count down to 0 by 5
 for (int i=100; i>=0; i=i-5) //i-=5
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 for loop: nested loops
 Used in a situation where two or more variables needed to
 be evaluated.
@@ -524,9 +575,11 @@ DIY graph paper!
 two sets of two for loops
 check out - graph_paper_10_px.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 void setup() {
 size(1000, 800);
 background(255);
@@ -550,18 +603,22 @@ rect(50, 50, 900, 700); // rect box
 saveFrame("graph.tif");
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 i'm feeling loopy and iffy!...which one to use?
 Use a while loop if you don’t know how many times you want
 the loop to execute (or based on an existing variable)
 Use a for loop if you know how many times you want to repeat
 Statement inside if only gets executed once
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 loop vs. draw
 LOOP INSIDE OF DRAW
 inner loop (while or for) produces one frame of an animation.
@@ -572,9 +629,11 @@ step 2 - draw a frame according to what the while loop produces.
 ——
 This is how draw produces animation.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 check out - sketch_6_4_loop_vs_draw.pde
 
 void setup () {
@@ -596,9 +655,11 @@ x=x+20;
 // what if i want the lines to show up one by one?
 // this type of animation needs to be achieved in draw.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 check out - sketch_6_4_loop_vs_draw.pde
 
 //Example 2: draw a vertical line one by one to the right.
@@ -615,9 +676,11 @@ x=x+50;
 //this one goes by too fast. how to control the speed of animation? See
 sketch_6_4_loop_animation.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 check out - sketch_6_4_loop_animation.pde
 float frX=0; //flexible animation frame width, so that the while loop can meet exit condition.
 int aSpeed=1; //control advancing speed
@@ -646,9 +709,11 @@ The animations goes like this: frame 1 - one line, frame 2 - two lines, frame 3 
 between. each frame.
 */
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: Ex 2
 Loops
@@ -662,4 +727,5 @@ revisit: Change the World
 more on counting + code: eQuilt
 Student Presentations
 
+	</script>
 </section>

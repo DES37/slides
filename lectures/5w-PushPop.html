@@ -8,6 +8,7 @@ transition: slide
 ---
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: Component 1, 2, 3 of Midterm project
 CHANGE THE WORLD
@@ -22,9 +23,11 @@ Lab for component 5
 Functions
 Student Presentations
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 a quick review from last class
 
 Transform
@@ -32,9 +35,11 @@ translate
 rotate
 scale
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 translate
 
 translate(60,80);
@@ -49,9 +54,11 @@ rect(0,0,40,40);
 
 Where is the center of rotation?
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_14_1_basic_translate_rotate_scale.pde
 
 void setup() {
@@ -72,9 +79,11 @@ rect(0, 0, 100, 50);
 
 The order of operation matters!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 What happens when you draw
 another shape after the coordinates
 have been
@@ -86,35 +95,45 @@ scaled
 
 The new transformed coordinates sticks with ya!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Houston, we have a problem!
 This makes my math WAY too complex!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Solution:
 Push/Pop matrix!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 Solution:
 Push/Pop matrix to isolate transformations!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 pushMatrix() and popMatrix()
 pushMatrix(); //saves current matrix
 popMatrix(); // restores last saved matrix
 draw(); // restores to default matrix
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_14_PushPop.pde
 
 multiple translations
@@ -133,9 +152,11 @@ rect (0, 0, 15, 15);
 }
 //each time it draws, the coordinates are set to default.
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 sketch_14_PushPop.pde
 
 multiple translations
@@ -170,35 +191,45 @@ rect (0, 0, 15, 15);
 }
 }
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 if
 you want the transformation to propagate for each transformation to build on the last.
 don’t use Push/Pop matrix!
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 a fun example on push pop
 sketch_14_17_nested_pushpop.pde
 p.292
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 first: a little math
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 logic for
 sketch_14_17_nested
 _pushpop.pde
 
+	</script>
 </section>
 
 <section data-markdown>
+	<script type="text/template">
 today
 Due: Component 1, 2, 3 of Midterm project
 CHANGE THE WORLD
@@ -213,4 +244,5 @@ Lab for component 5
 Functions
 Student Presentations
 
+	</script>
 </section>
