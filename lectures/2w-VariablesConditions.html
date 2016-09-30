@@ -2,114 +2,126 @@
 layout: slide
 title: "Lecture 2w"
 description: 
-theme: black
+theme: night
 transition: slide
 ---
 
 <section data-markdown>
 	<script type="text/template">
-today
-Due: ex 2, critique
-topics: variables, conditions
-introduce ex 2: Free Patterns
+### today
 
-tuesday
-due: Paper sketches for Ex 2
-studio: Free Patterns!
-student presentations: see schedule online
+- Due: ex 2, critique
+- topics: variables, conditions
+- introduce ex 2: Free Patterns
 
+<br>
+### tuesday
+
+- due: Paper sketches for Ex 2
+- studio: Free Patterns!
+- student presentations: see schedule online
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-review
-flow with setup and draw
-order of operation
-command-t tidy up
-iterate your design on unruled paper FIRST!
-this is the same thumbnail practice you do in all your
+## review
+
+- flow with `setup` and `draw`
+- order of operation
+- command-t tidy up
+
+
+- iterate your design on unruled paper FIRST!
+- this is the same thumbnail practice you do in all your
 classes in design.
-
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-basic functions
-void setup(){
-//runs only once
-//such as size, background
-}
-void draw(){
-//code that repeats forever
-//such as shapes and movements
-}
+## basic functions
 
+	void setup(){
+		//runs only once
+		//such as size, background
+	}
+
+	void draw(){
+		//code that repeats forever
+		//such as shapes and movements
+	}
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-variables
-Variables store data for later use in your program.
+## variables
 
-variable (data) types
-numbers:
+- Variables store data for later use in your program.
 
-int (integer number), float(number with decimals)
+<br>
+### variable (data) types
 
-numbers: byte,
+- numbers: `int` (integer number), `float` (number with decimals)
+- numbers: `byte`, `long`, `double` - difference in bit size.
+- letters: `char`
+- words, including spaces: `String`
+- true or false: `boolean`
 
-long, double
 
-- difference in bit size.
-
-letters: char
-words, including spaces: String
-true or false: boolean
-colors
-positions
-fonts
+- colors
+- positions
+- fonts
 ...and more
-
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-using variables
+## using variables
+
 use variables to:
+
 - save yourself from typing the same thing over and over again.
-(example: three circles all have the same y position and diameter.)
+
+  (example: three circles all have the same y position and diameter.)
+
+		size(480, 120);
+		int y = 60;
+		int d = 80;
+		ellipse(75, y, d, d);
+		ellipse(175, y, d, d);
+		ellipse(275, y, d, d);
 
 - the changing nature of an element in your design.
-(example: a circle moves from left to right => its x position
-changes.)
 
+  (example: a circle moves from left to right => its x position changes.)
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-variable names
-Case sensitive!
-myContainer, my_container, my_Container
-theScore, the_score, the_Score
+## variable names
 
-Use only letters, numbers and underscores
-Cannot start with a number
-Must be unique names within your program
-Cannot be a keyword (such as rect, ellipse, setup or draw)
+- Case sensitive!
 
+  `myContainer`, `my_container`, `my_Container`, `theScore`, `the_score`, `the_Score`
+
+
+- Use only letters, numbers and underscores
+- Cannot start with a number
+- Must be unique names within your program
+- Cannot be a keyword (such as rect, ellipse, setup or draw)
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-keywords in Processing
-indicated with color
-note here: i just named y and d as my variables; it’s in
+## keywords in Processing
+
+- indicated with color
+- note here: i just named y and d as my variables; it’s in
 black. black is safe!
 
 	</script>
@@ -117,177 +129,208 @@ black. black is safe!
 
 <section data-markdown>
 	<script type="text/template">
-consistency
+## consistency
 Be consistent in naming conventions:
  
-can use: user_name
-the convention: userName
+- can use: `user_name`
+- the convention: `userName`
 
-easy on yourself and easy on others
-design variable names so that you can understand in a flash
-think of others who will be reading your code
-try to make it shorter rather than longer
+<br>
+## easy on yourself and easy on others
 
+- design variable names so that you can understand in a flash
+- think of others who will be reading your code
+- try to make it shorter rather than longer
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-What is a good variable name for
-temperature?
-t
-temp
-temperature
-roomTemp
-roomTemperature
+## What is a good variable name for temperature?
 
+`t`
+
+`temp`
+
+`temperature`
+
+`roomTemp`
+
+`roomTemperature`
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-follow the rules
+## follow the rules
+
 (even though that makes me cringe...lol)
-int temp;
-int int;
-boolean 1temp;
-boolean heater;
-int last temp;
-int lastTemp;
-int last_temp;
-int last-temp;
 
+`int temp;`
+
+`int int;`
+
+`boolean 1temp;`
+
+`boolean heater;`
+
+`int last temp;`
+
+`int lastTemp;`
+
+`int last_temp;`
+
+`int last-temp;`
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-int temp;
-int int;
+`int temp;`
 
-//can’t use a keyword
+<strike>`int int;`</strike>  // can’t use a keyword
 
-boolean 1temp;
+<strike>`boolean 1temp;`</strike>  // can’t start with number
 
-//can’t start with number
+`boolean heater;`
 
-boolean heater;
-int last temp;
+<strike>`int last temp;`</strike>  // can’t use space
 
-//can’t use space
+`int lastTemp;`
 
-int lastTemp;
-int last_temp;
-int last-temp;
+`int last_temp;`
 
-//can’t use dash
-
+<strike>`int last-temp;`</strike>  // can’t use dash
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-variable declaration and initialization
-If the entire program shares the same variable, we put it before setup() to
-declare what’s called “global variables” - variables used throughout the
-program.
-//declaration only
-int x;
-//initialization
-x = 5;
-//declaration and initialization
-int x = 5;
+## variable declaration and initialization
 
+If the entire program shares the same variable, we put it before `setup()` to declare what are called “**global variables**” - variables used throughout the program.
+
+	//declaration only
+	int x;
+
+	//initialization
+	x = 5;
+
+	//declaration and initialization
+	int x = 5;
+
+<aside class="notes">
+elaborate on declaration and init and split globals to another slide
+actually there are slides about dec/init and globals below, rearrange!
+</aside>
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-variable: assign values with =
-int a;
-a = 3;
-a = 4*7/2; // can be an equation or expression
+## variable: assign values with `=`
 
-Variables can be used in expressions or as parameters
-int a, b;
-a = 20;
-b = a + 45;
+	int a;
+	a = 3;
+	a = 4*7/2; // can be an equation or expression
 
-rect(100, 100, b, a);
+Variables can be used in expressions or as parameters:
 
+	int a, b;
+	a = 20;
+	b = a + 45;
+
+	rect(100, 100, b, a);
+
+<aside class="notes">
+explain expression vs statement, and what about equations? clean this up!
+</aside>
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-let’s try it!
+## let’s try it!
+
 sketch_4_Variables.pde
-use variable to draw a circle.
 
+use variable to draw a circle
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-User Defined Variables
-step 1 declare the variable
+## User Defined Variables
+
+#### **step 1** declare the variable
+
 1. specify data type (number, a string of characters, etc)
-2. give a name
-can be absolutely anything (blueberrypancake, wackyshoes, etc)
-rule of thumb: name that defines purpose.
-lower case is the convention
- 
+2. give a name
+
+```
 int circleX;
+```
+
+- an be absolutely anything (blueberrypancake, wackyshoes, etc), but rule of thumb: name that defines purpose, lower case is the convention
  
-step 2 define its initial value
-circleX=50;  //This means, we want circleX to begin at 50 pix from the left.
-step 3 use the variable
+#### **step 2** define its initial value
+
+	circleX=50;  //This means we want circleX to begin at 50 pix from the left.
+
+#### **step 3** use the variable
+
 so far - our codes have been “function calls”, example - 
-line(50, 100, 200, 100); //not using variable
-ellipse(circleX, 180, 24, 24); //using variable
-function(arguments)semicolon
-now we are going to learn a new thingsomething=something; //This means, circleX=some math operation;
-circleX=width/3; //width of the canvas divided by 3. here “width” is a keyword.
 
+	line(50, 100, 200, 100); //not using variable
+	ellipse(circleX, 180, 24, 24); //using variable
+	function(arguments)semicolon
+
+#### now we are going to learn a new thing - 
+
+	something=something; //This means, circleX=some math operation;
+	circleX=width/3; //width of the canvas divided by 3. here “width” is a keyword.
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-Using Variables to Create Animation
+## Using Variables to Create 
+
 Animation:
-think flip-book!
-elements advance frame by frame
-In Processing:
-default frame rate is 60 fps
-draws everything inside draw 60 times per second!
-Use this property to create animation!
-variables can also be a math operation
-if i want to advance the x position of the circle by 1 pixel every time the
-program draws, then I can animate the circle!
-circleX=50; //first x position
-.
-.
-.
-circleX=circleX+1;
-50 +1 //second x position
-51+1
-//third x position
-52+1
-//fourth x position …. the program will add forever.
 
+- think flip-book!
+- elements advance frame by frame
+
+In Processing:
+
+- default frame rate is 60 fps
+- draws everything inside draw 60 times per second!
+
+Use this property to create animation!
+
+- variables can also be a math operation
+- if i want to advance the x position of the circle by 1 pixel every time the program draws, then I can animate the circle!
+
+		circleX = 50;  // first x position
+		...
+		circleX = circleX+1;
+			50+1  // second x position
+			51+1  // third x position
+			52+1  // fourth x position …. the program will add forever.
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-Incremental Variables - Speed of Animation
-circleX=circleX+1;
+## Incremental Variables - Speed of Animation
+
+circleX = circleX + 1;
 50 +1 //second x position
 51+1
 //third x position
 52+1
 //fourth x position …. the program will add forever.
+
 vary speed of the animation:
 1 pix per draw
 10 pix per draw
@@ -308,93 +351,106 @@ sketch_4_1_Incremental_Variables.pde
 
 <section data-markdown>
 	<script type="text/template">
-variable scope
-When a variable is shared throughout the program,
-declare it above and outside setup() and draw()
-This is called a global variable
+## variable scope
 
+When a variable is shared throughout the program, declare it above and outside `setup()` and `draw()`
+
+This is called a **global variable**
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-variable scope
-When a variable is created within a block of code,
-such as a function such as setup(), it can be used
-only within that block. In this case draw()will not
-know it.
-This is called a local variable
+## variable scope
 
+When a variable is created within a block of code, such as a function such as setup(), it can be used only within that block. In this case `draw()` will not know it.
+
+This is called a **local variable**
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-system variables for dimensions
-width // width in pixels of sketch size
-height // height in pixels of sketch size
-fullScreen // fullScreen
+## system variables for dimensions
 
-width
+	width  // width in pixels of sketch size
 
-and height are only available after
+	height  // height in pixels of sketch size
 
-they have been declared using size();
+`width` and `height` are only available after they have been declared using `size();`
 
+<aside class="notes">
+remove fullscreen from this because it is wrong!
+</aside>
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-increment and decrement shorthand
-x = x + 1; is the same as x++; (increment by 1)
-x = x - 1; is the same as x--; (decrement,increment by -1)
-x = x + 5; is the same as x+=5; (increment by 5)
-x = x - 5; is the same as x-=5; (decrement,increment by -5)
+## increment and decrement shorthand
 
+	x = x + 1; is the same as x++; (increment by 1)
+
+	x = x - 1; is the same as x--; (decrement,increment by -1)
+
+	x = x + 5; is the same as x+=5; (increment by 5)
+
+	x = x - 5; is the same as x-=5; (decrement,increment by -5)
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-let’s code - 6 variables!
+## let’s code - 6 variables!
+
 sketch_4_2_six_variables.pde
 
+ADD STUFF HERE
+
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-Boolean expressions
-FYI- Link to Daniel Shiffman’s video:
-https://www.youtube.com/watch?v=wsI6N9hfW7E&list=PLRqwXV7Uu6YqykuLs00261JCqnL_NNZ_
+## Boolean expressions
 
+FYI- [Link](https://youtu.be/wsI6N9hfW7E) to Daniel Shiffman’s video:
 
-boolean expression - is only true or false,
-with no gray area what so ever.
+*boolean expression* - is only true or false, with no gray area whatsoever.
+
 variable in a boolean expression:
-x >20
-In this case, evaluation of the statement is
-needed.
 
+e.g. `x>20`
+
+In this case, evaluation of the statement is needed.
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-For the purpose of evaluation:
-relational operators
-!= (not equal)
-< (less than)
-<= (less than or equal to)
-== (equal)
-> (greater than)
->= (greater than or equal to)
+For the purpose of evaluation
 
-logical operators
-! (logical NOT)
-&& (logical AND)
-|| (logical OR)
+#### relational operators
+
+`!=` (not equal)
+
+`<` (less than)
+
+`<=` (less than or equal to)
+
+`==` (equal)
+
+`>` (greater than)
+
+`>=` (greater than or equal to)
+
+#### logical operators
+
+`!` (logical NOT)
+
+`&&` (logical AND)
+
+`||` (logical OR)
 
 These operators are C’s operators.
 
@@ -403,16 +459,22 @@ These operators are C’s operators.
 
 <section data-markdown>
 	<script type="text/template">
-conditional statements
-if
+## conditional statements
+
+#### if
+
 Only do one thing, when there are two possibilities:
 Imagine you have 5 big apples and 5 small apples.
 If it’s a big apple, then put it in the basket.
-if, else
+
+#### if, else
+
 Can do two things, when there are two possibilities:
 Same scenario as above.
 If it’s a big apple, then put it in the basket, else compost the apple.
-if, else if
+
+#### if, else if
+
 More than two possibilities:
 If it’s a small apple, then compost,
 else if it’s a big red apple, then put it in the red basket,
@@ -423,17 +485,17 @@ else, put it in the black basket.
 
 <section data-markdown>
 	<script type="text/template">
-syntax
-if (condition) {
-statements;
-}
+## syntax
+	if (condition) {
+	    statements;
+	}
 
-if (x > 5) {
-background (0);
-}
+	if (x > 5) {
+	    background (0);
+	}
 
-If the condition inside the ( ) evaluates to be true, then,
-execute the code inside the { }. If not, do nothing.
+If the condition inside the `{ }` evaluates to be true, then,
+execute the code inside the `{ }`. If not, do nothing.
 
 	</script>
 </section>
@@ -442,11 +504,13 @@ execute the code inside the { }. If not, do nothing.
 	<script type="text/template">
 sketch_5_0_Boolean.pde
 
+ADD CODE
+
 If the x position of the mouse is greater than 200, then the background
 color is orange.
+
 Note: mouseX is in pink. This means “system variable”. Must follow
 syntax.
-
 	</script>
 </section>
 
@@ -454,59 +518,62 @@ syntax.
 	<script type="text/template">
 sketch_5_0_Boolean.pde continued
 
+ADD CODE
+
 This code might run fine, but we are taking a chance.
 xPosition is of the variable type of float (decimals).
 The width of the canvas is set to an integer number of 360.
 There is a chance that the program skips over the exact number of 360.
 It’s better to use xPosition>=width.
 Try xPosition=xPosition+3 to see the program skipping over 360.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+## syntax for if else
+
+	if (condition) {
+		statements
+	} else {
+		statements
+	}
+
+	if (x > 5) {
+		background (0);
+	} else {
+		background (255);
+	}
+
+If the condition inside the `{ }` evaluates to be true, then,
+execute the code inside the `{ }`. Else, execute the code
+inside the `{ }` after the word “else”.
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+## syntax for AND OR
+
+for AND, we use *ampersands*:
+
+	if ((  )&&(  )){
+		...
+	}
+
+for OR, we use pipes:
+
+	if ((  )||(  )) {
+		...
+	}
 
 	</script>
 </section>
 
 <section data-markdown>
 	<script type="text/template">
-syntax for if else
-if (condition) {
-statements
-} else {
-statements
-}
+ADD IMAGES
 
-if (x > 5) {
-background (0);
-} else {
-background (255);
-}
-
-If the condition inside the ( ) evaluates to be true, then,
-execute the code inside the { }. Else, execute the code
-inside the { } after the word “else”.
-
-	</script>
-</section>
-
-<section data-markdown>
-	<script type="text/template">
-syntax for AND OR
-for AND, we use ampersands.
-if ((  )&&(  )){
-—
-—
-—
-}
-for OR, we use pipes.
-if ((  )||(  )) {
-—
-—
-—
-}
-
-	</script>
-</section>
-
-<section data-markdown>
-	<script type="text/template">
 sketch_5_1_if_else.pde
 
 sketch_5_4_Bouncing_Ball.pde
@@ -514,7 +581,18 @@ sketch_5_4_Bouncing_Ball.pde
 sketch_5_2_and_or.pde
 
 sketch_5_5_Boolean_true_false.pde
+	</script>
+</section>
 
+<section data-markdown>
+	<script type="text/template">
+5.1 if, Else if, Else
+
+https://www.youtube.com/watch?v=mVq7Ms01RjA&index=2&list=PLRqwX-V7Uu6YqykuLs00261JCqnL_NNZ_
+
+5.2 AND, OR
+
+https://www.youtube.com/watch?v=9857701OsDE&list=PLRqwX-V7Uu6YqykuLs00261JCqnL_NNZ_&index=3
 	</script>
 </section>
 
@@ -523,6 +601,7 @@ sketch_5_5_Boolean_true_false.pde
 Yeah!! Now you have all the tools to program!!! All you need
 is variables and conditions! Other things we learn in the
 future will help organize and make your code more efficient!
+
 Congratulations!
 
 Now, on to ex 2: Free Patterns!
